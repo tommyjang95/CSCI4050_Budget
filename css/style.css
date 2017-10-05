@@ -1,0 +1,208 @@
+/********************************/
+/** Fonts **/
+/********************************/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Calibri');
+
+/********************************/
+/** Global common css **/
+/********************************/
+.body-content{
+  width: 100%;
+  background-color: #ededed;
+}
+
+.head{                
+    padding: 10px 20px 15px 90px;
+    background-color: #4277FC;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 230%;
+    font-weight: bold;
+    font-family: 'Calibri', sans-serif;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent !important; }
+input:focus:-moz-placeholder { color:transparent !important; }
+
+
+/********************************/
+/** dash.html **/
+/********************************/
+.dashboard table.space{
+border-collapse: separate;
+border-spacing: 15px;
+}
+.dashboard a {color:#05b5ba;}      /* unvisited link */
+.dashboard a:visited {color:#05b5ba;}  /* visited link */
+.dashboard a:hover {color:#05b5ba;}  /* mouse over link */
+.dashboard a:active {color:#05b5ba;}  /* selected link */
+.dashboard tr{
+  height: 80px;
+  width: 20px;
+}
+.dashboard table{
+  border-collapse: collapse;
+}
+.dashboard table, td, th {
+border: 8px solid #ededed;
+}
+.dashboard .left-menu {
+padding:20px 50px 50px 30px;
+}
+
+.carousel-border {
+  border-style: solid;
+  border-width: 12px;
+  color: white;
+}
+.menu-item ,.Carousel-menu,.progress-menu {
+background-color: white;
+margin: 2px;
+width: 480px;
+padding: 8px 0px 0px 15px;
+}
+
+.menu-item {
+height: 33px;
+}
+.Carousel-menu {
+height: 60px;
+}
+.progress-menu {
+height: 48px;
+}
+
+.right-menu{
+width: 300px;
+}
+
+.subhead{
+background: black;
+background-color: #1AB2BC;
+color: white;
+font-size: 150%;
+font-family: 'Roboto', sans-serif;
+text-align :left;
+}
+
+.subhead-width{
+width: 482px;
+height: 65px;
+padding: 10px 30px 10px 15px;
+}
+
+.myAccount-pos{
+  position: absolute;
+  top: 20px;
+  left: 1085px;
+}
+
+
+.myCarousel{
+  position: absolute;
+  top: 1px;
+  left: 535px;
+  width: 73%;
+}
+
+.carousel-pos{
+  position: absolute;
+  top: 280px;
+  left: 1088px;
+}
+
+#head-button{
+  width: 100px;
+  height: 20px;
+  background: #61A3F8;
+  border: 1px ;
+  cursor: pointer;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0px;
+  text-align: center;
+  border-radius: 8px;
+  float: right;
+ }
+
+/*------------*/
+/* CALENDAR */
+/*------------*/
+ ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.month {
+    padding: 30px 25px;
+    width: 50%;
+    background: #1AB2BC;
+    text-align: center;
+}
+
+/* Month list */
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+/* Weekdays  */
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    width: 50%;
+    background-color:#ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+    padding: 10px 0;
+    background: #eee;
+    width: 50%;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color:#777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+    padding: 5px;
+    background: #1AB2BC;
+    color: white !important
+}
