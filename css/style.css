@@ -7,11 +7,6 @@
 /********************************/
 /** Global common css **/
 /********************************/
-.body-content{
-  width: 100%;
-  background-color: #ededed;
-}
-
 .head{                
     padding: 10px 20px 15px 90px;
     background-color: #4277FC;
@@ -24,6 +19,131 @@
 
 input:focus::-webkit-input-placeholder { color:transparent !important; }
 input:focus:-moz-placeholder { color:transparent !important; }
+
+/********************************/
+/** login.html **/
+/********************************/
+.jumbotron-login{
+  margin-top: 120px;
+  background-color: #fff;
+}
+
+.login-container{
+  width: 55%;
+  height: 50%;
+  background-color: #ededed;
+  margin: 0 auto;
+  padding: 1px 40px;
+  margin-top: -1%;
+}
+
+
+#loginbtn{           
+  width: 200px;
+  height: 40px;
+  background: #1AB2BC;
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 6px;
+  margin-top: -10px;
+  margin-left: 56%;
+  text-align: center;
+}
+
+/*Log In*/
+.header1 div{
+  position: relative;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #fff;
+  background-color: #1AB2BC;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  padding: 10px 0px;
+  top: -65px;
+  text-align: center;
+}
+.link1 > a{
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  font-size: 12px;
+  font-weight: bold;
+  top: 180px;
+  left: 140px;
+  color: #05b5ba;
+  color: #05b5ba; 
+  text-decoration: none;
+}
+
+.link2 > a{
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  text-align: right;
+  font-size: 12px;
+  font-weight: bold;
+  top: 161.5px;
+  left: 520px;
+  color: #555555;
+  color: #555555; 
+  text-decoration: none;
+}
+
+/*Username, Password, Log In Boxes together*/
+.login{
+  position: relative;
+  top: -20px;
+  left: calc(50% - 300px);
+  height: 150px;
+  width: 350px;
+  padding: 10px;
+  text-align: center;
+}
+
+.login input::placeholder, .login input{
+  color: #fff;
+}
+
+/*Username*/
+.login input[type=text]{
+  width: 580px;
+  height: 45px;
+  background: #b7b7b7;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  padding: 3px;
+  margin-top: -70px;
+  text-align: center;
+}
+
+/*Password*/
+.login input[type=password]{
+  width: 580px;
+  height: 45px;
+  background: #b7b7b7;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  padding: 3px;
+  margin-top: 10px;
+  text-align: center;
+}
+
 
 
 /********************************/
