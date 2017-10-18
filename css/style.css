@@ -144,7 +144,93 @@ input:focus:-moz-placeholder { color:transparent !important; }
   text-align: center;
 }
 
+/*******************************/
+/** Signup.html **/
+/*******************************/
+.signUp input::placeholder, .signUp input{
+  color: #fff !important;
+  font-size: 20px !important;
+  font-style: italic !important;
+  font-family: arial !important;
+  border-radius: 0px !important;
+}
 
+.signUp input{
+  text-indent: 5px !important;
+}
+
+
+.form-container{
+  width: 80%;
+  height: auto;
+  background-color: #fff;
+  margin:0 auto;
+  padding: 1px 90px;
+  background-color: #fff;
+}
+
+
+/* create your account - title */
+#form-title{
+  font-size: 25px;
+  font-weight: bold;
+  font-family: arial;
+  color: #05b5ba;
+  font-style: normal;
+}
+
+
+/* input fields */
+  input:not([type=radio]), select{
+  height: 40px;
+  background: #b7b7b7;
+}
+
+/* text font */
+.font {
+font-size: 16px;
+}
+
+/* dropdown style */
+#drop-down{
+  background: #b7b7b7;
+  color: #fff;
+  border-radius: 0px; 
+  padding-left: 10px;
+  font-size: 20px;
+  font-style: italic;
+  font-family: arial;
+  height: 45px;
+}
+
+.c-both{
+  clear: both;
+}
+
+/*DOB dropdown style */
+.dob{
+  font-style: italic;
+  color: #fff;
+  font-size: 20px;
+ }
+
+/* padding */
+.pdtp-3pc{            
+  padding-top: 3%;
+}
+
+
+/*  signUp button */
+#signupbtn{           
+    width: 25%;
+    font-size: 25px;
+    font-weight: bold;
+    background: #05b5ba;
+    border: 1px solid #c6c6c6;
+    border-radius: 0px;
+    padding: 5px;
+    color: #fff;
+}
 
 /********************************/
 /** dash.html **/
