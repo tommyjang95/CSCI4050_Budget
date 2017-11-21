@@ -257,12 +257,8 @@ border: 8px solid #ededed;
 padding:20px 50px 50px 30px;
 }
 
-.carousel-border {
-  border-style: solid;
-  border-width: 12px;
-  color: white;
-}
-.menu-item ,.Carousel-menu,.progress-menu {
+
+.menu-item ,.progress-menu {
 background-color: white;
 margin: 2px;
 width: 480px;
@@ -301,21 +297,15 @@ padding: 10px 30px 10px 15px;
 .myAccount-pos{
   position: absolute;
   top: 20px;
-  left: 1085px;
+  left: 1135px;
 }
 
 
-.myCarousel{
+.myBudgeting{
   position: absolute;
   top: 1px;
   left: 535px;
   width: 73%;
-}
-
-.carousel-pos{
-  position: absolute;
-  top: 280px;
-  left: 1088px;
 }
 
 #head-button{
@@ -411,4 +401,189 @@ body {font-family: Verdana, sans-serif;}
     padding: 5px;
     background: #1AB2BC;
     color: white !important
+}
+
+
+/*********************************/
+/*  FAQ */
+/*********************************/
+.jumbotron-faq{
+  margin-top: 100px;
+  background-color: #fff;
+  height: 400px;
+}
+
+.faq-container{
+  width: 55%;
+  height: 50%;
+  background-color: #ededed;
+  margin: 0 auto;
+  padding: 1px 40px;
+  margin-top: -1%;
+}
+
+.faq{
+  position: relative;
+  top: -390px;
+  left: calc(50% - 350px);
+  width: 95%;
+  padding: 10px;
+  text-align: left;
+}
+
+
+
+/*********************************/
+/*  budget0.html */
+/*********************************/
+.jumbotron-budget0{
+  margin-top: 100px;
+  background-color: #fff;
+  height: 300px;
+}
+
+.budget0-container{
+  width: 55%;
+  height: 50%;
+  background-color: #ededed;
+  margin: 0 auto;
+  padding: 1px 40px;
+  margin-top: -1%;
+}
+
+.planChoice{
+  position: relative;
+  top: -390px;
+  left: calc(50% - 350px);
+  width: 95%;
+  padding: 10px;
+  text-align: left;
+}
+
+#rolloverbtn{           
+  width: 200px;
+  height: 100px;
+  background: #1AB2BC;
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 6px;
+  text-align: center;
+  margin-left:40px;
+  margin-top:10px;
+  padding-top:35px;
+}
+
+#custombtn{           
+  width: 200px;
+  height: 100px;
+  background: #1AB2BC;
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 6px;
+  text-align: center;
+  margin-top: -122px;
+  margin-left: 435px;
+  padding-top:35px;
+}
+
+/*********************************/
+/*  budget1.html: basic rollover */
+/*********************************/
+.jumbotron-budget1{
+  margin-top: 100px;
+  margin-left: -200px;
+  margin-right: 100px;
+  background-color: #fff;
+  height: 400px;
+}
+
+.budget1-container{
+  width: 55%;
+  height: 50%;
+  background-color: #ededed;
+  margin: 0 auto;
+  padding: 1px 40px;
+  margin-top: -1%;
+}
+
+.budget1{
+  position: relative;
+  top: -390px;
+  left: calc(50% - 550px);
+  width: 95%;
+  padding: 10px;
+  text-align: left;
+}
+
+#computebtn1{           
+  width: 200px;
+  height: 40px;
+  background: #1AB2BC;
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 6px;
+  margin-top: 150px;
+  margin-left: 40%;
+}
+
+
+
+/*********************************/
+/*  budget2.html: custom plan */
+/*********************************/
+.jumbotron-budget2{
+  margin-top: 100px;
+  margin-left: -200px;
+  margin-right: 100px;
+  background-color: #fff;
+  height: 400px;
+}
+
+.budget2-container{
+  width: 55%;
+  height: 50%;
+  background-color: #ededed;
+  margin: 0 auto;
+  padding: 1px 40px;
+  margin-top: -1%;
+}
+
+.budget2{
+  position: relative;
+  top: -390px;
+  left: calc(50% - 550px);
+  width: 95%;
+  padding: 10px;
+  text-align: left;
+}
+
+#computebtn2{           
+  width: 200px;
+  height: 40px;
+  background: #1AB2BC;
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 6px;
+  margin-top: 20px;
+  margin-left: 40%;
 }
