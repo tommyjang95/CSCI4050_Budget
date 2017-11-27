@@ -259,10 +259,9 @@ border-spacing: 15px;
 .dashboard table, td, th {
 border: 8px solid #ededed;
 }
-.dashboard .left-menu {
-padding:20px 50px 50px 30px;
+.left-menu {
+padding:20px 40px 50px 30px;
 }
-
 
 .menu-item ,.progress-menu {
 background-color: white;
