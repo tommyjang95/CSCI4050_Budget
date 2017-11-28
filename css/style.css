@@ -535,8 +535,8 @@ body {font-family: Verdana, sans-serif;}
   font-size: 20px;
   font-weight: 700;
   padding: 6px;
-  margin-top: 150px;
-  margin-left: 40%;
+  margin-top: 100px;
+  margin-left: 35%;
 }
 
 
@@ -549,7 +549,7 @@ body {font-family: Verdana, sans-serif;}
   margin-left: -200px;
   margin-right: 100px;
   background-color: #fff;
-  height: 400px;
+  height: 450px;
 }
 
 .budget2-container{
@@ -563,7 +563,7 @@ body {font-family: Verdana, sans-serif;}
 
 .budget2{
   position: relative;
-  top: -390px;
+  top: -440px;
   left: calc(50% - 500px);
   width: 95%;
   padding: 10px;
@@ -582,8 +582,8 @@ body {font-family: Verdana, sans-serif;}
   font-size: 20px;
   font-weight: 700;
   padding: 6px;
-  margin-top: 20px;
-  margin-left: 40%;
+  margin-top: 10px;
+  margin-left: 35%;
 }
 
 
