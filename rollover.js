@@ -87,7 +87,7 @@ function rollover() {
     var newBudget = calculatedBudget + day2 //18
 
     document.getElementById('test2').innerHTML = newBudget;
-    alert(day2);
+
 }
 //day 3
 function rollover2() {
@@ -100,7 +100,7 @@ function rollover2() {
     var newBudget = calculatedBudget  + calculatedBudget + day3
 
     document.getElementById('test3').innerHTML = newBudget;
-    alert(day3);
+
 }
 
 function rollover3() {
@@ -114,7 +114,7 @@ function rollover3() {
     var newBudget = calculatedBudget + calculatedBudget + calculatedBudget + day4
 
     document.getElementById('test4').innerHTML = newBudget;
-    alert(day4);
+
 }
 
 function rollover4() {
@@ -129,7 +129,7 @@ function rollover4() {
     var newBudget = calculatedBudget * 4 + day5
 
     document.getElementById('test5').innerHTML = newBudget;
-    alert(day5);
+
 }
 
 function rollover5() {
@@ -145,7 +145,7 @@ function rollover5() {
     var newBudget = calculatedBudget * 5 + day6
 
     document.getElementById('test6').innerHTML = newBudget;
-    alert(day6);
+
 }
 
 function rollover6() {
@@ -162,7 +162,7 @@ function rollover6() {
     var newBudget = calculatedBudget * 6 + day7
 
     document.getElementById('test7').innerHTML = newBudget;
-    alert(day7);
+
 }
 
 function rollover7() {
@@ -180,7 +180,7 @@ function rollover7() {
     var newBudget = calculatedBudget * 7 + day8
 
     document.getElementById('test8').innerHTML = newBudget;
-    alert(day8);
+
 }
 
 function rollover8() {
@@ -199,7 +199,7 @@ function rollover8() {
     var newBudget = calculatedBudget * 8 + day9
 
     document.getElementById('test9').innerHTML = newBudget;
-    alert(day9);
+
 }
 
 function rollover9() {
@@ -219,7 +219,7 @@ function rollover9() {
     var newBudget = calculatedBudget * 9 + day10
 
     document.getElementById('test10').innerHTML = newBudget;
-    alert(day10);
+
 }
 
 
