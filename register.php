@@ -11,7 +11,7 @@
 <title>Sign Up</title>
 <body class="signUp" style="background-color: #ededed;">
   <p class="head"> BudgetUp </p>
-  <form name="signUpForm" action="includes/signup.inc.php" method="POST" >
+  <form name="signUpForm"  method="POST" >
 
     <div class="body-content">
       <div class="form-container">
