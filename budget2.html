@@ -6,7 +6,7 @@
     <title>Budgeting Plan 2: Custom Plan</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <script type="text/javascript"></script>
+      <script type="text/javascript" src="rollover.js"></script>
   </head>
 
   <!-- Body -->
@@ -25,7 +25,7 @@
             <div class="budget2">
                 <h5>
                     <div class="form-group">
-                      <label for="usr">What is your annual income?</label>
+                      <label for="usr">What is your annual income after taxes?</label>
                       <input type="text" class="form-control" id="customincome">
                     </div>
                     <div class="form-group">
@@ -33,12 +33,16 @@
                       <input type="text" class="form-control" id="customnecessities">
                     </div>
                     <div class="form-group">
-                      <label for="usr">How much money do you want to allocate to savings every month?</label>
+                      <label for="usr">How much money do you want to allocate to savings every year?</label>
                       <input type="text" class="form-control" id="customsavings">
+                    </div>
+                    <div class="form-group">
+                        <label for="usr">Would you like to set up a monthly or yearly budget?</label>
+                        <input type="text" class="form-control" id="chooseBudget">
                     </div>
 
                      <div class="form-group">
-                        <input type="button" value="Compute" id="computebtn2" class="btn btn-primary btn-lg form-control"/>
+                        <input type="button" onclick="customCalculate()" value="Compute" id="computebtn2" class="btn btn-primary btn-lg form-control"/>
                     </div>
 
                 </h5>
