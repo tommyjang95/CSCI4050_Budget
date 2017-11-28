@@ -6,7 +6,7 @@
      <title>Budgeting Plan 1: Basic Rollover</title>
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
      <link rel="stylesheet" type="text/css" href="css/style.css"/>
-      <script type="text/javascript"></script>
+      <script type="text/javascript" src="rollover.js"></script>
   </head>
 
   <!-- Body -->
@@ -28,9 +28,14 @@
                       <label for="usr">How much money is available for you to spend every month?</label>
                       <input type="text" class="form-control" id="rolloverincome">
                     </div>
+
+                    <div class="form-group">
+                        <label for="usr">How much money is available for you to spend every month?</label>
+                        <input type="text" class="form-control" id="month">
+                    </div>
                     
                     <div class="form-group">
-                        <input type="button" value="Compute" id="computebtn1" class="btn btn-primary btn-lg form-control"/>
+                        <input type="button" onclick="calculate()" value="Compute" id="computebtn1" class="btn btn-primary btn-lg form-control"/>
                     </div>
 
                 </h5>
