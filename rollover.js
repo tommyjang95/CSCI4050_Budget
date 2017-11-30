@@ -78,22 +78,28 @@ function calculate() {
 
 function realRollover() {
     var input = document.getElementById("rolloverincome").value; // total monthly budget
-    var monthlyBudget = input/30
-    var dailyBudget = Math.floor(monthlyBudget* 100) / 100
+    var monthlyBudget = input/30;
+    var dailyBudget = Math.floor(monthlyBudget* 100) / 100;
 
-    var availableDay = [i];
-    var spentDay = [i];
-    var addDay = [i];
-    var total = [i];
-
-    availableDay[1] = 10
-    for(i = 1; i <= 30; i++) {
+    var availableDay = new Array(30);
+    var spentDay = new Array(30);
+    var addDay = new Array(30);
+    var total = new Array(30);
+    
+    availableDay[0] = 10
+    for(i = 0; i < 30; i++) {
+        k = i+1;
         var dayBudget = 10;
-        var spent = document.getElementById('day1roll').value // how much spent
+        var dayname = "day" + k + "roll";
+        var spent = document.getElementById(dayname).value; // how much spent
         spentDay[i] = spent;
         addDay[i] = availableDay[i] - spentDay[i];
         total[i] = dayBudget + addDay[i];
         alert[total[i]];
+        j = i+2;
+        var name = "test" + j;
+        document.getElementById(name).innerHTML = total[i]; //prints
+        availableDay[i+1] = total[i];
     }
 
 }
