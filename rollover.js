@@ -21,9 +21,8 @@ function calculate() {
 
     //Divides the total month budget(user input) into individual budgets according what month(user input)
     if(month1 == "january" || month1 == "January") {
-        monthlyBudget = input/30
+        monthlyBudget = input/31
         var calculatedBudget = Math.floor(monthlyBudget* 100) / 100
-        alert(calculatedBudget);
         document.getElementById('test').innerHTML = calculatedBudget;
     } else if (month1 == ("february") || month1 == "February") {
         monthlyBudget = input/28
@@ -65,7 +64,7 @@ function calculate() {
     } else if (month1 == ("november") || month1 == "November") {
         monthlyBudget = input/30
         var calculatedBudget = Math.floor(monthlyBudget* 100) / 100
-        alert(calculatedBudget);
+        document.getElementById('test').innerHTML = calculatedBudget;
     } else if (month1 == ("december") || month1 == "December") {
         monthlyBudget = input/31
         var calculatedBudget = Math.floor(monthlyBudget* 100) / 100
@@ -76,6 +75,29 @@ function calculate() {
     }
 
 }
+
+function realRollover() {
+    var input = document.getElementById("rolloverincome").value; // total monthly budget
+    var monthlyBudget = input/30
+    var dailyBudget = Math.floor(monthlyBudget* 100) / 100
+
+    var availableDay = [i];
+    var spentDay = [i];
+    var addDay = [i];
+    var total = [i];
+
+    availableDay[1] = 10
+    for(i = 1; i <= 30; i++) {
+        var dayBudget = 10;
+        var spent = document.getElementById('day1roll').value // how much spent
+        spentDay[i] = spent;
+        addDay[i] = availableDay[i] - spentDay[i];
+        total[i] = dayBudget + addDay[i];
+        alert[total[i]];
+    }
+
+}
+
 
 //day 2
 function rollover() {
