@@ -73,9 +73,9 @@ function calculate() {
     else {
         alert("Please enter the month correctly");
     }
-
 }
 
+//ROLLOVER ALGORITHM **working**
 function realRollover() {
     var input = document.getElementById("rolloverincome").value; // total monthly budget
     var monthlyBudget = input/30;
@@ -101,153 +101,6 @@ function realRollover() {
         document.getElementById(name).innerHTML = total[i]; //prints
         availableDay[i+1] = total[i];
     }
-
-}
-
-
-//day 2
-function rollover() {
-    var input = document.getElementById("rolloverincome").value;
-    var monthlyBudget = input/30
-    var calculatedBudget = Math.floor(monthlyBudget* 100) / 100
-    var budget1 = document.getElementById('day1roll').value //2
-    var day2 = calculatedBudget - budget1; //8
-    var newBudget = calculatedBudget + day2 //18
-
-    document.getElementById('test2').innerHTML = newBudget;
-
-}
-//day 3
-function rollover2() {
-    var input = document.getElementById("rolloverincome").value;
-    var monthlyBudget = input/30
-    var calculatedBudget = Math.floor(monthlyBudget* 100) / 100
-    var budget1 = document.getElementById('day1roll').value //2
-    var budget2 = document.getElementById('day2roll').value //3
-    var day3 = calculatedBudget - budget1 - budget2; //
-    var newBudget = calculatedBudget  + calculatedBudget + day3
-
-    document.getElementById('test3').innerHTML = newBudget;
-
-}
-
-function rollover3() {
-    var input = document.getElementById("rolloverincome").value;
-    var monthlyBudget = input/30
-    var calculatedBudget = Math.floor(monthlyBudget* 100) / 100
-    var budget1 = document.getElementById('day1roll').value
-    var budget2 = document.getElementById('day2roll').value
-    var budget3 = document.getElementById('day3roll').value
-    var day4 = calculatedBudget - budget1 - budget2 - budget3;
-    var newBudget = calculatedBudget + calculatedBudget + calculatedBudget + day4
-
-    document.getElementById('test4').innerHTML = newBudget;
-
-}
-
-function rollover4() {
-    var input = document.getElementById("rolloverincome").value;
-    var monthlyBudget = input/30
-    var calculatedBudget = Math.floor(monthlyBudget* 100) / 100
-    var budget1 = document.getElementById('day1roll').value
-    var budget2 = document.getElementById('day2roll').value
-    var budget3 = document.getElementById('day3roll').value
-    var budget4 = document.getElementById('day4roll').value
-    var day5 = calculatedBudget - budget1 - budget2 - budget3 - budget4;
-    var newBudget = calculatedBudget * 4 + day5
-
-    document.getElementById('test5').innerHTML = newBudget;
-
-}
-
-function rollover5() {
-    var input = document.getElementById("rolloverincome").value;
-    var monthlyBudget = input/30
-    var calculatedBudget = Math.floor(monthlyBudget* 100) / 100
-    var budget1 = document.getElementById('day1roll').value
-    var budget2 = document.getElementById('day2roll').value
-    var budget3 = document.getElementById('day3roll').value
-    var budget4 = document.getElementById('day4roll').value
-    var budget5 = document.getElementById('day5roll').value
-    var day6 = calculatedBudget - budget1 - budget2 - budget3 - budget4 - budget5;
-    var newBudget = calculatedBudget * 5 + day6
-
-    document.getElementById('test6').innerHTML = newBudget;
-
-}
-
-function rollover6() {
-    var input = document.getElementById("rolloverincome").value;
-    var monthlyBudget = input/30
-    var calculatedBudget = Math.floor(monthlyBudget* 100) / 100
-    var budget1 = document.getElementById('day1roll').value
-    var budget2 = document.getElementById('day2roll').value
-    var budget3 = document.getElementById('day3roll').value
-    var budget4 = document.getElementById('day4roll').value
-    var budget5 = document.getElementById('day5roll').value
-    var budget6 = document.getElementById('day6roll').value
-    var day7 = calculatedBudget - budget1 - budget2 - budget3 - budget4 - budget5 - budget6;
-    var newBudget = calculatedBudget * 6 + day7
-
-    document.getElementById('test7').innerHTML = newBudget;
-
-}
-
-function rollover7() {
-    var input = document.getElementById("rolloverincome").value;
-    var monthlyBudget = input/30
-    var calculatedBudget = Math.floor(monthlyBudget* 100) / 100
-    var budget1 = document.getElementById('day1roll').value
-    var budget2 = document.getElementById('day2roll').value
-    var budget3 = document.getElementById('day3roll').value
-    var budget4 = document.getElementById('day4roll').value
-    var budget5 = document.getElementById('day5roll').value
-    var budget6 = document.getElementById('day6roll').value
-    var budget7 = document.getElementById('day7roll').value
-    var day8 = calculatedBudget - budget1 - budget2 - budget3 - budget4 - budget5 - budget6 - budget7;
-    var newBudget = calculatedBudget * 7 + day8
-
-    document.getElementById('test8').innerHTML = newBudget;
-
-}
-
-function rollover8() {
-    var input = document.getElementById("rolloverincome").value;
-    var monthlyBudget = input/30
-    var calculatedBudget = Math.floor(monthlyBudget* 100) / 100
-    var budget1 = document.getElementById('day1roll').value
-    var budget2 = document.getElementById('day2roll').value
-    var budget3 = document.getElementById('day3roll').value
-    var budget4 = document.getElementById('day4roll').value
-    var budget5 = document.getElementById('day5roll').value
-    var budget6 = document.getElementById('day6roll').value
-    var budget7 = document.getElementById('day7roll').value
-    var budget8 = document.getElementById('day8roll').value
-    var day9 = calculatedBudget - budget1 - budget2 - budget3 - budget4 - budget5 - budget6 - budget7 - budget8;
-    var newBudget = calculatedBudget * 8 + day9
-
-    document.getElementById('test9').innerHTML = newBudget;
-
-}
-
-function rollover9() {
-    var input = document.getElementById("rolloverincome").value;
-    var monthlyBudget = input/30
-    var calculatedBudget = Math.floor(monthlyBudget* 100) / 100
-    var budget1 = document.getElementById('day1roll').value
-    var budget2 = document.getElementById('day2roll').value
-    var budget3 = document.getElementById('day3roll').value
-    var budget4 = document.getElementById('day4roll').value
-    var budget5 = document.getElementById('day5roll').value
-    var budget6 = document.getElementById('day6roll').value
-    var budget7 = document.getElementById('day7roll').value
-    var budget8 = document.getElementById('day8roll').value
-    var budget9 = document.getElementById('day9roll').value
-    var day10 = calculatedBudget - budget1 - budget2 - budget3 - budget4 - budget5 - budget6 - budget7 - budget8 - budget9;
-    var newBudget = calculatedBudget * 9 + day10
-
-    document.getElementById('test10').innerHTML = newBudget;
-
 }
 
 
@@ -279,10 +132,6 @@ function customCalculate() {
     } else {
         alert("Please enter monthly or yearly")
     }
-
-
-
-
 
 
 }
