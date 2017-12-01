@@ -6,7 +6,6 @@
     <title>Budgeting Plan 2: Custom Plan</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
-      <script type="text/javascript" src="rollover.js"></script>
   </head>
 
   <!-- Body -->
@@ -38,7 +37,7 @@
                     </div>
 
                      <div class="form-group">
-                        <input type="button" onclick="customCalculate()" value="Compute" id="computebtn2" class="btn btn-primary btn-lg form-control"/>
+                        <input type="button" onclick="customMonthly()" value="Compute" id="computebtn2" class="btn btn-primary btn-lg form-control"/>
                     </div>
 
                 </h5>
@@ -57,5 +56,74 @@
       <p class="menu-item  right-menu"> <a href="#Logout"> Logout </a> </p>
       </div>
 
+
+      <body style="background-color: #ededed;">
+    
+    
+
+    <div class="budget2-container">
+        <div class="jumbotron jumbotron-budget2">
+          <div class="header1">
+              <div>Custom Plan - Monthly</div>
+          </div>
+          <br>
+          <form>
+            </div>
+            <div class="budget2">
+                <h5>
+                    <div class="form-group">
+                      <label for="usr">Annual income after taxes: </label>
+                       <div class="panel panel-default">
+                          <div class="panel-body"; id="customincome2" style="padding:8px;" "></div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="usr">Money used on necessities every month: </label>
+                       <div class="panel panel-default">
+                          <div class="panel-body" id="customnecessities2" style="padding:8px;" "></div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="usr">Money allocated to spendings every year: </label>
+                       <div class="panel panel-default">
+                          <div class="panel-body" id="customsavings2" style="padding:8px;" "></div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="usr">Monthly or yearly budget:</label> <br>
+                         <div class="panel panel-default">
+                          <div class="panel-body" id="budgett" style="padding:8px;" "></div>
+                      </div>
+                    </div>
+
+                </h5>
+            </div>
+            </div>
+          </form>
+      </div>
+      </div>
+        
+  
   </body>
+
+
+  <script type="text/javascript">
+
+
+function customMonthly() {
+    var annual = document.getElementById("customincome").value;
+    var nec = document.getElementById("customnecessities").value;
+    var sav = document.getElementById("customsavings").value;
+
+    document.getElementById("customincome2").value = annual;
+    document.getElementById("customnecessities2").value = nec;
+    document.getElementById("customsavings2").value = sav;
+
+    var budget = annual-nec-sav;
+
+    alert(budget);
+}
+
+
+</script>
 </html>
