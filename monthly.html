@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Budgeting Plan 2: Custom Plan</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+
+<!-- Body -->
+<body style="background-color: #ededed;">
+
+<p class="head"> <a href="budget0.html"> BudgetUp</a></p>
+
+<div class="budget2-container">
+    <div class="jumbotron jumbotron-budget2">
+        <div class="header1">
+            <div>Custom Plan</div>
+        </div>
+        <br>
+        <form>
+    </div>
+    <div class="budget2">
+        <h5>
+            <div class="form-group">
+                <label for="usr">What is your annual income after taxes?</label>
+                <input type="text" class="form-control" id="customincome">
+            </div>
+            <div class="form-group">
+                <label for="usr">How much money per month do you spend on basic necessities? (such as rent, bills, food, water, etc.)</label>
+                <input type="text" class="form-control" id="customnecessities">
+            </div>
+            <div class="form-group">
+                <label for="usr">How much money do you want to allocate to savings every year?</label>
+                <input type="text" class="form-control" id="customsavings">
+            </div>
+
+            <div class="form-group">
+                <input type="button" onclick="customMonthly()" value="Compute" id="computebtn2" class="btn btn-primary btn-lg form-control"/>
+            </div>
+
+        </h5>
+    </div>
+</div>
+</form>
+</div>
+</div>
+
+<div class="myAccount-pos">
+<br><br><br><br>
+<p class="menu-item  right-menu">  <strong>My Account</strong>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="caret"></span></p>
+<p class="menu-item  right-menu"> <a href="budget0.html"> Choose a Plan </a>  </p>
+<p class="menu-item  right-menu"> <a href="faq.html"> FAQ </a> </p>
+<p class="menu-item  right-menu"> <a href="login.html"> Logout </a> </p>
+</div>
+
+
+
+<body style="background-color: #ededed;">
+
+
+
+<div class="budget2-container">
+    <div class="jumbotron jumbotron-budget2">
+        <div class="header1">
+            <div>Custom Plan - Monthly</div>
+        </div>
+        <br>
+        <form>
+    </div>
+    <div class="budget2">
+        <h5>
+            <div class="form-group">
+                <label for="usr">Annual income after taxes: </label>
+                <div class="panel panel-default">
+                    <div class="panel-body" style="padding:8px;" ">
+                    <p id="customincome2"></p>
+                </div>
+            </div>
+    </div>
+    <div class="form-group">
+        <label for="usr">Money used on necessities every month: </label>
+        <div class="panel panel-default">
+            <div class="panel-body" id="customnecessities2" style="padding:8px;" "></div>
+    </div>
+</div>
+<div class="form-group">
+    <label for="usr">Money allocated to spendings every year: </label>
+    <div class="panel panel-default">
+        <div class="panel-body" id="customsavings2" style="padding:8px;" "></div>
+</div>
+</div>
+<div class="form-group">
+    <label for="usr">Monthly Spending Budget:</label> <br>
+    <div class="panel panel-default">
+        <div class="panel-body" id="budgett" style="padding:8px;" "></div>
+</div>
+</div>
+
+</h5>
+</div>
+</div>
+</form>
+</div>
+</div>
+
+
+</body>
+
+
+<script type="text/javascript">
+
+
+    function customMonthly() {
+
+
+        var annual = document.getElementById("customincome").value;
+        var nec = document.getElementById("customnecessities").value;
+        var sav = document.getElementById("customsavings").value;
+
+        document.getElementById("customincome2").innerHTML = annual;
+        document.getElementById("customnecessities2").innerHTML = nec *1;
+        document.getElementById("customsavings2").innerHTML = sav *1;
+
+
+        var budget = annual-(nec*12)-sav;
+
+        document.getElementById('budgett').innerHTML = budget;
+
+    }
+
+
+</script>
+</html>
