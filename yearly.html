@@ -53,7 +53,7 @@
     <div class="budget2-container">
         <div class="jumbotron jumbotron-budget2">
           <div class="header1">
-              <div>Custom Plan - Monthly</div>
+              <div>Custom Plan - Yearly</div>
           </div>
           <br>
           <form>
@@ -78,6 +78,12 @@
                           <div class="panel-body" id="customsavings2" style="padding:8px;" "></div>
                       </div>
                     </div>
+                    <div class="form-group">
+                      <label for="usr">Yearly Spending Budget </label>
+                       <div class="panel panel-default">
+                          <div class="panel-body" id="savingbudget" style="padding:8px;" "></div>
+                      </div>
+                    </div>
 
                 </h5>
             </div>
@@ -96,4 +102,24 @@
       </div>
 
   </body>
+
+   <script type="text/javascript">
+
+function customCalculate() {
+    var annual = document.getElementById("customincome").value;
+    var nec = document.getElementById("customnecessities").value;
+    var sav = document.getElementById("customsavings").value;
+  
+    document.getElementById("customincome2").innerHTML= annual;
+    document.getElementById("customnecessities2").innerHTML = nec;
+    document.getElementById("customsavings2").innerHTML = sav;
+
+    var budget = annual-nec-sav;
+
+    document.getElementById("savingbudget").innerHTML = budget;
+
+}
+
+
+</script>
 </html>
